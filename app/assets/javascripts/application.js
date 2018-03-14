@@ -13,3 +13,14 @@
 //= require jquery3
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+    $('[data-js-hide-link]').click(function(event){
+        //alert('You clicked the Hide link');
+        //$(this).parents('li').hide();
+        $(this).parents('li').fadeOut(2000);
+        event.preventDefault();
+    });
+}
+);
+

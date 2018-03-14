@@ -1,0 +1,8 @@
+<h1>Tutorials</h1>
+<ul>
+  <h3>List of rails tutorials</h3>
+  <% @tutorials.each do |tutorial| %>
+    <li><%= link_to(tutorial.title, tutorial.url) %>  <%= link_to "(Hide)", "", class: 'hide', data: {'js-hide-link' => true} %></li>
+    <p></p>
+  <% end %>
+</ul>
